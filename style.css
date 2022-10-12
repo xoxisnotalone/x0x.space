@@ -11,3 +11,9 @@ body {
 a {
     color: yellow;
 }
+
+canvas {
+    width: 600px;
+    height: 300px;
+    border: 2px solid;
+  }
