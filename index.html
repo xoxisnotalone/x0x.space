@@ -4,38 +4,35 @@
 <head>
     <meta charset="utf-8" />
     <title>x0x.space</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="dive in to space." />
     <meta name="author" content="xoxisnotalone" />
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body onload="main()">
     <h1>x0x webspace</h1>
-    Welcome to my rabbit hole 
+    Welcome to my rabbit hole
     <h2><a href="wheretostart.html">Where to start</a></h2>
     <img src="welcome.png" />
     <style>
         body {
-          background-image: url('welcome.png');
+            background-image: url('welcome.png');
 
         }
-        </style> 
-
-<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
-</script>
+    </style>
 
 
-<h1> Upload & Display Image</h1>
-<canvas id="can"> </canvas>
+    <canvas id="canvas"></canvas>
+    <label for="uploader">Select file:</label>
+    <input type="file" id="uploader" />
+    <button>Download</button>
+    <div id="status"></div>
 
-<p>
-    <input type="file" multiple="true" accept="image/*" id="finput" onchange="upload()">
-</p>
 
-    <p id="output_p"></p>
-   
-   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+    <script src="./canvas/script.js"></script>
+
 </body>
 
 </html>
